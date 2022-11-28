@@ -5,10 +5,10 @@ public class Gun : MonoBehaviour
 {
 
 
-    public float damage = 10f;
+   
     public float range = 100f;
-  
-  
+
+    public int damageAmount = 20;
 
     public Camera fpscamera;
     public ParticleSystem muzzleflash;
@@ -40,7 +40,8 @@ public class Gun : MonoBehaviour
             Enemy enemy = hit.transform.GetComponent<Enemy>();
             if (enemy != null)
             {
-               enemy.TakeDamage(damage);
+                enemy.TakeDamage(damageAmount);
+                return;
                 
                   
                 

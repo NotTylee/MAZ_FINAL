@@ -5,25 +5,29 @@ using UnityEngine.AI;
 
 public class Enemy : MonoBehaviour
 {
-    public float health = 50;
+    public int enemyHP = 100;
     
-    
+    public Animator animator;
 
    
-    public void TakeDamage(float amount)
+    public void TakeDamage(int damageAmount)
     {
-       health -= amount;
-        if (health <= 0f)
+        enemyHP -= damageAmount;
+        if (enemyHP <= 0)
         {
+            animator.SetTrigger("death");
+            GetComponent<CapsuleCollider>().enabled = false;
             Die();
         }
-
-
+        else
+        {
+            animator.SetTrigger("damage");
+        }
     }
     void Die()
     {
-        
-        Destroy(gameObject);
+        Destroy(gameObject, 5);
     }
-
+   
+    
 }
