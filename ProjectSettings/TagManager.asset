@@ -6,6 +6,8 @@ TagManager:
   tags:
   - WayPoints
   - Enemy
+  - Reach
+  - Med
   layers:
   - Default
   - TransparentFX
