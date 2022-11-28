@@ -5,28 +5,25 @@ using UnityEngine.AI;
 
 public class Enemy : MonoBehaviour
 {
+    public float health = 50;
+    
+    
+
    
-    public float health = 50f;
-
-    EnemyAI enemyAI;
-
-    private void Start()
+    public void TakeDamage(float amount)
     {
-        enemyAI = GetComponent<EnemyAI>();
-    }
-    public void TakeDamage (float amount)
-    {
-        health -= amount;
+       health -= amount;
         if (health <= 0f)
         {
             Die();
         }
-    }
 
+
+    }
     void Die()
     {
-        enemyAI.EnemyDeathAnim();
-        Destroy(gameObject, 10);
+        
+        Destroy(gameObject);
     }
-   
+
 }
