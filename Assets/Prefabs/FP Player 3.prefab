@@ -1,36 +1,5 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &802446688005307516
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 948596943103668883}
-  m_Layer: 0
-  m_Name: Weapon
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &948596943103668883
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 802446688005307516}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.405, y: 0.561, z: 0.76}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 4089831788644394928}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2066240738803174996
 GameObject:
   m_ObjectHideFlags: 0
@@ -178,7 +147,6 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2326537283992487813}
-  - {fileID: 948596943103668883}
   - {fileID: 6799135126879277342}
   - {fileID: 3414062693443671871}
   m_Father: {fileID: 0}
@@ -238,7 +206,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   loadout:
   - {fileID: 11400000, guid: b8dec4a5c6baafe4985b3ed84fb92c49, type: 2}
-  weaponParent: {fileID: 948596943103668883}
+  weaponParent: {fileID: 0}
 --- !u!1 &4089831788926250332
 GameObject:
   m_ObjectHideFlags: 0
@@ -413,7 +381,7 @@ Transform:
   m_Children:
   - {fileID: 4089831789139889081}
   m_Father: {fileID: 4089831788644394928}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &7770022006852475001
 GameObject:
@@ -445,5 +413,5 @@ Transform:
   m_Children:
   - {fileID: 4089831788642431709}
   m_Father: {fileID: 4089831788644394928}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

@@ -21,8 +21,8 @@ public class PlayerHealth : MonoBehaviour
     {
         if(health <= 0)
         {
-            player.GetComponent<PlayerController>().enabled = false;
-            player.GetComponent<PlayerLook>().enabled = false;
+            player.GetComponent<PlayerMovementScript>().enabled = false;
+           
             Cursor.visible = true;
             Cursor.lockState = CursorLockMode.None;
         }
