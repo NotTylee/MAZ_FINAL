@@ -8,6 +8,7 @@ TagManager:
   - Enemy
   - Reach
   - Med
+  - Doors
   layers:
   - Default
   - TransparentFX
@@ -17,8 +18,8 @@ TagManager:
   - UI
   - WhatIsPlayer
   - Ground
-  - 
-  - 
+  - Doors
+  - Trigger
   - 
   - 
   - 
