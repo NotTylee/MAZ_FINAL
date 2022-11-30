@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class DropAndPickUp : MonoBehaviour
 {
-    public Gun gunScript;
+    public GunSystem gunScript;
     public Rigidbody rb;
     public BoxCollider coll;
     public Transform player, gunContainer, fpsCam;

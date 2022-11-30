@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class MouseLook : MonoBehaviour
 {
-    public float mouseSensitivity = 100f;       // This is a public float of mouseSensitivity that we can multiply our Mouse X and Mouse Y by. 
+    public float mouseSensitivity = 10f;       // This is a public float of mouseSensitivity that we can multiply our Mouse X and Mouse Y by. 
 
     public Transform playerBody;
 
